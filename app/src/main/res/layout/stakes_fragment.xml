@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StakesFragment">
+
+    <Spinner
+        android:id="@+id/spinner_stakes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_edittext"
+        android:entries="@array/stakes"
+        android:paddingVertical="@dimen/edittext_vpad"
+        android:spinnerMode="dialog"
+        android:textAlignment="center"
+        android:theme="@style/spinnerTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edittext_stakesDesc"
+        style="@style/input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Explain the stakes.\ne.g. &quot;Loser owes dinner to the winner&quot; or &quot;Everybody puts 2 euros into the challenge and the participants earn a share of the total according to their ranking&quot; "
+        android:inputType="textMultiLine"
+        android:justificationMode="inter_word"
+        android:maxLines="40"
+        android:minLines="10"
+        android:padding="16dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_stakes" />
+
+    <TextView
+        android:id="@+id/textView30"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Description"
+        app:layout_constraintBottom_toBottomOf="@+id/edittext_stakesDesc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edittext_stakesDesc" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <TextView
+        android:id="@+id/textView29"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Stake"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_stakes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner_stakes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

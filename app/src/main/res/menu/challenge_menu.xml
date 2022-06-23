@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/infoFragment"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="@string/info_fragment"/>
+
+    <item
+        android:id="@+id/rulesFragment"
+        android:icon="@drawable/whistle"
+        android:title="@string/rules_fragment"/>
+
+    <item
+        android:id="@+id/stakesFragment"
+        android:icon="@drawable/trophy"
+        android:title="@string/stakes_fragment"/>
+
+    <item
+        android:id="@+id/participantsFragment"
+        android:icon="@drawable/ic_baseline_people_24"
+        android:title="@string/participants_fragment"/>
+
+    <item
+        android:id="@+id/summaryFragment"
+        android:icon="@drawable/ic_baseline_format_list_numbered_24"
+        android:title="@string/summary_fragment"/>
+</menu>

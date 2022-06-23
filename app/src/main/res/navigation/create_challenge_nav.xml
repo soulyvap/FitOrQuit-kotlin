@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/create_challenge_nav"
+    app:startDestination="@id/infoFragment">
+
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.fitorquit.InfoFragment"
+        android:label="info_fragment"
+        tools:layout="@layout/info_fragment" >
+        <action
+            android:id="@+id/action_infoFragment_to_rulesFragment"
+            app:destination="@id/rulesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="com.example.fitorquit.RulesFragment"
+        android:label="rules_fragment"
+        tools:layout="@layout/rules_fragment" >
+        <action
+            android:id="@+id/action_rulesFragment_to_stakesFragment"
+            app:destination="@id/stakesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stakesFragment"
+        android:name="com.example.fitorquit.StakesFragment"
+        android:label="stakes_fragment"
+        tools:layout="@layout/stakes_fragment" >
+        <action
+            android:id="@+id/action_stakesFragment_to_participantsFragment"
+            app:destination="@id/participantsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/participantsFragment"
+        android:name="com.example.fitorquit.ParticipantsFragment"
+        android:label="participants_fragment"
+        tools:layout="@layout/participants_fragment" >
+        <action
+            android:id="@+id/action_participantsFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.example.fitorquit.SummaryFragment"
+        android:label="summary_fragment"
+        tools:layout="@layout/summary_fragment" />
+</navigation>

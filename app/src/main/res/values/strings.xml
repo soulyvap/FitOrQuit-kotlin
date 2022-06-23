@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">FitOrQuit</string>
+    <string name="home_fragment">Home</string>
+    <string name="add_fragment">Add</string>
+    <string name="search_fragment">Search</string>
+    <string name="notification_fragment">Notifications</string>
+    <string name="info_fragment">Info</string>
+    <string name="rules_fragment">Rules</string>
+    <string name="stakes_fragment">Stakes</string>
+    <string name="participants_fragment">Participants</string>
+    <string name="summary_fragment">Summary</string>
+    <string name="youtube_api_key">AIzaSyBFWLLnHSyDrrbPAWDwISli1nykWv3sBNI</string>
+
+    <string-array name="challengeCategories">
+        <item>Choose a category</item>
+        <item>Body weight (calisthenics)</item>
+        <item>Weight lifting</item>
+        <item>Athletics</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="timeUnits">
+        <item>seconds</item>
+        <item>minutes</item>
+    </string-array>
+    <string-array name="stakes">
+        <item>What is at stake?</item>
+        <item>Money</item>
+        <item>Other</item>
+        <item>Nothing. Just for fun</item>
+    </string-array>
+
+    <string-array name="refereeing">
+        <item>Only admins can validate attempts</item>
+        <item>Everybody has to validate attempts</item>
+    </string-array>
+
+</resources>
